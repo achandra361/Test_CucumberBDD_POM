@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class SeleniumDriver {
 	
 	private static SeleniumDriver seleniumDriver;
@@ -22,7 +24,7 @@ public class SeleniumDriver {
     private  SeleniumDriver() {
 
        
-    	//WebDriverManager.chromedriver().setup();
+    	WebDriverManager.chromedriver().setup();
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
 
