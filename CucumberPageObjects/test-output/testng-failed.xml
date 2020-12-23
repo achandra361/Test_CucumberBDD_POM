@@ -3,7 +3,25 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
+      <class name="pages.locators.FundsandAssetPageLocators"/>
+      <class name="pages.action.BanksPageActions"/>
+      <class name="Steps.BeforeActions"/>
+      <class name="pages.locators.InsightsPageLocators"/>
+      <class name="Steps.ValidateEntityRatingSteps"/>
+      <class name="listeners.Retry"/>
+      <class name="Steps.ValidateBankReportSteps"/>
+      <class name="pages.locators.BanksPageLocators"/>
+      <class name="pages.action.FundsandAssetPageAction"/>
+      <class name="pages.action.SearchPageActions"/>
+      <class name="pages.action.FitchHomePageActions"/>
+      <class name="pages.locators.SearchPageLocators"/>
+      <class name="Steps.ValidateFundandAsstMangerSteps"/>
+      <class name="Steps.AfterActions"/>
+      <class name="utils.SeleniumDriver"/>
       <class name="runner.PositiveTest"/>
+      <class name="listeners.RetryListener"/>
+      <class name="pages.action.InsightsPageActions"/>
+      <class name="pages.locators.FitchHomePageLocators"/>
     </classes>
   </test> <!-- Default test -->
   <test parallel="none" name="Default test(failed)">
